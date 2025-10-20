@@ -78,5 +78,17 @@ namespace CreatingTextFile
                 MessageBox.Show("Error saving file:\n" + ex.Message, "Error");
             }
         }
+
+        private void FrmRegistration_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmStudentRecord studentForm = new FrmStudentRecord();
+            studentForm.Show();
+            this.Hide();
+        }
     }
 }

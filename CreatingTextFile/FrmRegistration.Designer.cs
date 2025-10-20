@@ -48,6 +48,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtContactt = new System.Windows.Forms.TextBox();
             this.btnRegister = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -350,7 +351,7 @@
             // btnRegister
             // 
             this.btnRegister.BackColor = System.Drawing.Color.Cyan;
-            this.btnRegister.Location = new System.Drawing.Point(293, 254);
+            this.btnRegister.Location = new System.Drawing.Point(325, 254);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(213, 41);
             this.btnRegister.TabIndex = 21;
@@ -358,12 +359,24 @@
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button1.Location = new System.Drawing.Point(739, 259);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(74, 30);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Records";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(825, 323);
+            this.ClientSize = new System.Drawing.Size(825, 345);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.txtContactt);
             this.Controls.Add(this.label10);
@@ -386,6 +399,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmRegistration";
             this.Text = "FrmRegistration";
+            this.Load += new System.EventHandler(this.FrmRegistration_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -413,5 +427,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtContactt;
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button button1;
     }
 }

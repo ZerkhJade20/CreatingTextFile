@@ -57,6 +57,10 @@ namespace CreatingTextFile
                 MessageBox.Show($"Error writing file:\n{ex.Message}", "Error");
             }
         }
-       
+
+        private void FrmLab1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
